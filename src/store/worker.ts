@@ -1,4 +1,4 @@
-import { store } from "./store";
 import { expose } from "comlink";
+import { workerStore } from "./workerStore";
 
-expose(store);
+expose(workerStore);
