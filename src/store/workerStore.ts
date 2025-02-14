@@ -8,7 +8,9 @@ export interface WorkerStore {
 }
 
 export const workerStore: WorkerStore = {
-  getState: async () => store.getState(),
+  getState: async () => {
+    return store.getState();
+  },
   dispatch: async (action) => {
     store.dispatch(action);
   },
